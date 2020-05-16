@@ -43,6 +43,7 @@ layout: default
   {% assign posts = sticky_posts | concat: non_sticky_posts %}
 
   {%- if posts.size > 0 -%}
+    <h1>Posts</h1>
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
