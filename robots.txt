@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://wndaiga.github.io/wndaiga_fastpages/sitemap.xml
