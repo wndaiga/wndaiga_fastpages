@@ -7,5 +7,59 @@
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
 
+$small: 767px;
+$large: 768px;
+$extraLarge: 991px;
+
+section.home-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.home-banner img.headshot {
+    width: 25vw;
+    height: auto;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+section.home-banner header.tagline {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+section.home-banner header.tagline span.tag-close {
+    border-bottom: 1px solid #000;
+    padding-bottom: 1em;
+}
+
+section.home-bio {
+    font-size: large;
+}
+
+
+@media (min-width: $extraLarge) {
+}
+@media (min-width: $large) {
+}
+@media (max-width: $small) {
+    section.home-banner {
+        flex-direction: column;
+    }
+    section.home-banner img.headshot {
+        width: 65vw;
+        margin-bottom: 1.5em;
+    }
+    section.home-banner header.tagline {
+        width: 80vw;
+        align-self: flex-start;
+    }
+    section.home-banner header.tagline span.tag-close {
+        width: 90vw;
+    }
+}
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
