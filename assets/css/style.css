@@ -432,6 +432,21 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
+section.home-banner { display: flex; justify-content: center; align-items: center; }
+
+section.home-banner img.headshot { width: 25vw; height: auto; border-radius: 1em; margin-bottom: 1em; }
+
+section.home-banner header.tagline { display: flex; flex-direction: column; font-size: x-large; font-weight: 500; }
+
+section.home-banner header.tagline span.tag-close { border-bottom: 1px solid #000; padding-bottom: 1em; }
+
+section.home-bio { font-size: large; }
+
+@media (max-width: 767px) { section.home-banner { flex-direction: column; }
+  section.home-banner img.headshot { width: 65vw; margin-bottom: 1.5em; }
+  section.home-banner header.tagline { width: 80vw; align-self: flex-start; }
+  section.home-banner header.tagline span.tag-close { width: 90vw; } }
+
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
