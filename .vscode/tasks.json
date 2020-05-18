@@ -12,6 +12,16 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        },
+        {
+            "label": "Start Fastpage",
+            "type": "shell",
+            "command": "make server-detached"
+        },
+        {
+            "label": "Stop Fastpage",
+            "type": "shell",
+            "command": "make stop"
+        },
     ]
 }
