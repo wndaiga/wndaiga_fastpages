@@ -10,6 +10,8 @@
 $small: 767px;
 $large: 768px;
 $extraLarge: 991px;
+$tableColor: rgb(133, 249, 218);
+$criteria-table-rows: 6;
 
 section.home-banner {
     display: flex;
@@ -40,8 +42,20 @@ section.home-bio {
     font-size: large;
 }
 
-tr th:nth-child(3) {
+table.project-criteria-table {
+    background-color: $tableColor;
+}
+
+table.project-criteria-table tr th:nth-child(3) {
     width: 100%;
+}
+
+table.project-criteria-table {
+    @for $i from 1 through $criteria-table-rows {
+        & tr.row-#{$i} {
+            background-color: lighten($tableColor, 10 * $i/3);
+        }
+    }
 }
 
 @media (min-width: $extraLarge) {
