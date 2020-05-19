@@ -10,7 +10,8 @@
 $small: 767px;
 $large: 768px;
 $extraLarge: 991px;
-$tableColor: rgb(133, 249, 218);
+$teal: rgb(133, 249, 218);
+$peach: #ffb86c;
 $criteria-table-rows: 6;
 
 section.home-banner {
@@ -43,7 +44,7 @@ section.home-bio {
 }
 
 table.project-criteria-table {
-    background-color: $tableColor;
+    background-color: $teal;
 }
 
 table.project-criteria-table tr th:nth-child(3) {
@@ -53,9 +54,56 @@ table.project-criteria-table tr th:nth-child(3) {
 table.project-criteria-table {
     @for $i from 1 through $criteria-table-rows {
         & tr.row-#{$i} {
-            background-color: lighten($tableColor, 10 * $i/3);
+            background-color: lighten($teal, 10 * $i/3);
         }
     }
+}
+
+table.float-table {
+    margin: 0px auto;
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+
+table.float-table tr {
+
+    &:hover {
+        background-color: $teal;
+        font-size: 1.3em;
+        color:lightslategrey;
+    }
+
+    & td {
+        border: 0;
+    }
+}
+
+td.float-table-title {
+    font-size: 1.5em;
+    min-width: 200px;
+
+    & span.keychar {
+        font-weight: 500;
+        font-size: 1.55em;
+        margin-right: 0.1em;
+    }
+}
+
+td.float-table-description {
+    min-width: 400px;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 0.5em 10px;
+}
+
+li.project-criteria-task {
+    font-weight: bold;
+}
+
+ul.project-criteria-actions > li {
+    font-weight: 300;
 }
 
 @media (min-width: $extraLarge) {
