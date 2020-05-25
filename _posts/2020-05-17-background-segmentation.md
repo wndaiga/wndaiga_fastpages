@@ -1,7 +1,7 @@
 ---
 keywords: fastai
-description: An approach to performing background subtraction in photos using an Image Segmentation Convolution Neural Network.
-title: Using Object Segmentation for Image Background Subtraction
+description: An approach to performing background subtraction in photos using a Semantic Image Segmentation CNN (Convolution Neural Network)
+title: Using Semantic Segmentation for Image Background Subtraction
 categories: [jupyter, computer vision, CNN]
 hide: false
 nb_path: _notebooks/2020-05-17-background-segmentation.ipynb
@@ -24,6 +24,13 @@ layout: notebook
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It's</p>
+
+</div>
+</div>
+</div>
 </div>
  
 
