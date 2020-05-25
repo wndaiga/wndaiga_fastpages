@@ -40,6 +40,9 @@ section.home-bio {
     font-size: large;
 }
 
+tr th:nth-child(3) {
+    width: 100%;
+}
 
 @media (min-width: $extraLarge) {
 }
