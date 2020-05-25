@@ -7,14 +7,15 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Wachira Ndaiga
-description: 🧭 Machine Seeking Human
+description: ♾️ HUMAN IN THE LOOP
 github_username: wndaiga
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "wndaiga_fastpages"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
-url: "https://wndaiga.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://wndaiga.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://work.wachirandaiga.com"
 
 ###########################################################
 #########  Special Instructions for baseurl ###############
